@@ -1,0 +1,29 @@
+{
+  "name": "happo-visual-testing",
+  "version": "1.0.0",
+  "description": "Happo visual testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sadorus/happo-visual-testing.git"
+  },
+  "keywords": [
+    "Happo"
+  ],
+  "author": "Mateusz Błoch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sadorus/happo-visual-testing/issues"
+  },
+  "homepage": "https://github.com/Sadorus/happo-visual-testing#readme",
+  "dependencies": {
+    "cypress": "^6.3.0"
+  },
+  "devDependencies": {
+    "happo-cypress": "^1.16.0",
+    "happo.io": "^6.4.0"
+  }
+}
