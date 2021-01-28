@@ -15,7 +15,7 @@ describe('Home page', function () {
       cy.get('body')
       .happoScreenshot()
 
-      cy.get('.navbar')
+      cy.get('header.header')
       .happoScreenshot()
 
     });
