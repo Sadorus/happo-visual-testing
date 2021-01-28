@@ -6,7 +6,7 @@ describe('Home page', function () {
       cy.get('body')
       .happoScreenshot()
       
-      cy.get('accept-cookies-button')
+      cy.get('.accept-cookies-button')
       .click()
       .happoScreenshot()
     });
