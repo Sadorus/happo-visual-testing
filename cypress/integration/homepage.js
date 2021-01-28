@@ -9,10 +9,13 @@ describe('Home page', function () {
 
       cy.wait(2500)
       cy.happoHideDynamicElements({
-        selectors: ['div.optanon-alert-box-wrapper'],
+        selectors: ['.page-title'],
       });
 
       cy.get('body')
+      .happoScreenshot()
+
+      cy.get('.navbar')
       .happoScreenshot()
 
     });
