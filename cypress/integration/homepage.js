@@ -6,9 +6,11 @@ describe('Home page', function () {
       cy.get('body')
       .happoScreenshot()
       
-      cy.get('.accept-cookies-button')
-      .click()
-      .get('body')
+      cy.happoHideDynamicElements({
+        selectors: ['div.optanon-alert-box-wrapper'],
+      });
+
+      cy.get('body')
       .happoScreenshot()
 
     });
