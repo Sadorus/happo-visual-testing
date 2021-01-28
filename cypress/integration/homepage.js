@@ -18,5 +18,10 @@ describe('Home page', function () {
       cy.get('header.header')
       .happoScreenshot()
 
+      cy.get('a.navbar-item.relative.hover-border-bottom-swipe-in.pseudo-bg-color-open-source')
+      .click()
+      .get('body')
+      .happoScreenshot()
+
     });
   });
