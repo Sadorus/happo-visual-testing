@@ -8,6 +8,8 @@ describe('Home page', function () {
       
       cy.get('.accept-cookies-button')
       .click()
+      .get('body')
       .happoScreenshot()
+
     });
   });
