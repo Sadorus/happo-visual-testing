@@ -6,6 +6,8 @@ describe('Home page', function () {
       cy.get('body')
       .happoScreenshot()
       
+
+      cy.wait(2500)
       cy.happoHideDynamicElements({
         selectors: ['div.optanon-alert-box-wrapper'],
       });
