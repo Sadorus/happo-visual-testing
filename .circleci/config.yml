@@ -5,4 +5,4 @@ workflows:
   build:
     jobs:
       - cypress/run:
-          command: happo-ci-circleci
+          command: "BASE_BRANCH=\"origin/main\" npx happo-cypress -- npx cypress run"
