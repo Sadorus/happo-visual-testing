@@ -4,6 +4,7 @@
   "description": "Happo visual testing",
   "main": "index.js",
   "scripts": {
+    "happo-ci-circleci": "BASE_BRANCH=\"origin/main\" npx happo-cypress -- npx cypress run",
     "cypress:version": "cypress version",
     "cypress:verify": "cypress verify",
     "cypress:open": "cypress open",

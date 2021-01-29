@@ -5,5 +5,4 @@ workflows:
   build:
     jobs:
       - cypress/run:
-          start: npm run start:ci
-          command: npx happo-cypress -- npx cypress run
+          command: "BASE_BRANCH=\"origin/main\" npx happo-cypress -- npx cypress run"
