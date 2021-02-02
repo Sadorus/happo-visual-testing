@@ -1,4 +1,5 @@
 const happoTask = require('happo-cypress/task');
+//const browserify = require('@cypress/browserify-preprocessor')
 /// <reference types="cypress" />
 // ***********************************************************
 // This example plugins/index.js can be used to load plugins
@@ -16,8 +17,9 @@ const happoTask = require('happo-cypress/task');
 /**
  * @type {Cypress.PluginConfig}
  */
-module.exports = (on, config) => {
+module.exports = (on) => {
   on('task', happoTask);
+  //on('file:preprocessor', browserify())
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
 }
