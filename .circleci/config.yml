@@ -6,3 +6,6 @@ workflows:
     jobs:
       - cypress/run:
           command: "BASE_BRANCH=\"origin/main\" npx happo-cypress -- npx cypress run"
+
+      - cypress/run:
+          command: 'CYPRESS_INTRODUCE_FAILING_ASSERTION=true HAPPO_PROJECT=allow-failures node bin/happo-cypress.js --allow-failures -- npm'
