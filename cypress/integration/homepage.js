@@ -3,12 +3,12 @@ describe('Home page', function () {
       cy.visit('https://wttech.blog/');
 
 
-      cy.wait(2500)
+
       cy.get('body')
       .happoScreenshot()
       
 
-      cy.wait(2500)
+      cy.wait(1500)
       cy.happoHideDynamicElements({
         selectors: ['.page-title'],
       });
