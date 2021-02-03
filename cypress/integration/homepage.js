@@ -3,7 +3,7 @@ describe('Home page', function () {
       cy.visit('https://wttech.blog/');
 
 
-
+      cy.wait(3500)
       cy.get('body')
       .happoScreenshot()
       
