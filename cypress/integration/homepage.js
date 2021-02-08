@@ -8,9 +8,9 @@ describe('Home page', function () {
       .happoScreenshot()
       
 
-      cy.wait(1500)
+      cy.wait(2500)
       cy.happoHideDynamicElements({
-        selectors: ['.page-title'],
+        selectors: ['.page-subtitle'],
       });
 
       cy.get('body')
