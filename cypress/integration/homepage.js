@@ -1,6 +1,6 @@
 describe('Home page', function () {
     it('loads properly', function () {
-      cy.visit('https://www.astonmartinartofliving.com/en/');
+      cy.visit('https://wttech.blog/');
 
 
       cy.wait(3500)
